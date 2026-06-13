@@ -3,7 +3,7 @@ let colorInp = document.querySelector('#input');
 let applyBtn = document.querySelector('.setbtn');
 let currClr = document.querySelector('.currClrVal');
 let body = document.querySelector('body');
-
+https://www.youtube.com/
 const ColorChange = (color)=>{
     if(color){
         body.style.backgroundColor = color;
