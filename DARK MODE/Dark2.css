@@ -1,0 +1,114 @@
+/* Light & Dark mode */
+.light {
+    background-color: #fafafa;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.dark {
+    background-color: #222;
+    color: #f5f5f5;
+    transition: all 0.3s ease;
+}
+
+/* Body */
+.body-replace {
+    font-family: 'Noto Sans JP', 'Helvetica', 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background: #fdf6f0; /* soft warm background */
+}
+
+/* Container */
+.container {
+    width: 700px;
+    text-align: center;
+    position: relative;
+}
+
+/* Add Note Button */
+#addNoteBtn {
+    padding: 12px 28px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: #ffdcdc; /* soft pastel pink */
+    color: #333;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+#addNoteBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    background-color: #ffe5e5;
+}
+
+/* Notes Container */
+.notes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual Note */
+.note {
+    background-color: #fff6c8; /* pastel yellow */
+    width: 150px;
+    min-height: 150px;
+    padding: 15px;
+    position: relative;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.note:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Textarea inside note */
+.note textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    resize: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.3;
+}
+
+/* Delete Button */
+.deleteBtn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #ff9eb3; /* soft pink */
+    color: white;
+    border: none;
+    padding: 3px 7px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 12px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.deleteBtn:hover {
+    transform: scale(1.2);
+    background-color: #ff758f;
+}
+
+/* Optional: gentle rotations for aesthetic randomness */
+.note:nth-child(3n) { transform: rotate(-1deg); }
+.note:nth-child(4n) { transform: rotate(1deg); }
+.note:nth-child(5n) { transform: rotate(-2deg); }
